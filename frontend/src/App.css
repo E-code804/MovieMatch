@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+/* quicksand */
+:root {
+  --primary: #1c1c1c;
+  --secondary: #fbfaf2;
+}
+
+.home {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Tailwind General Styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+
+/* Navbar Styles */
+
+/* Hero Styles */
+.hero {
+    height: 90vh;
+}
+
+.search-bar input {
+    background-color: #fbfaf2;
+}
