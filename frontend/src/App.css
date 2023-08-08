@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 /* quicksand */
 :root {
@@ -50,9 +50,38 @@
 
 /* Hero Styles */
 .hero {
-    height: 90vh;
+  height: 80vh;
 }
 
 .search-bar input {
-    background-color: #fbfaf2;
+  background-color: #fbfaf2;
+}
+
+/* MovieDisplay Styles */
+.option-btn {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  font-size: 18px;
+  transition: all 0.3s ease 0s;
+}
+
+.selected-option {
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  font-size: 18px;
+}
+
+.option-btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.movie-card {
+
 }
